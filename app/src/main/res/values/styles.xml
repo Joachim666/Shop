@@ -7,5 +7,21 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="PrimaryTextView">
+        <item name="android:textColor">@color/PrimartTextViewColor</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+
+
+
+    </style>
+    <style name="SecondaryTextView">
+        <item name="android:textColor">@color/secondaryTextViewColor</item>
+        <item name="android:textSize">16sp</item>
+
+
+
+
+    </style>
 
 </resources>

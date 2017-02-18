@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+
+    tools:context="com.sdacademy.otto.joachim.shop.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="GUN SHOP"
+
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/punisher"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/punisher"
+            android:layout_weight="0.09"
+            android:layout_alignParentTop="true" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <com.sdacademy.otto.joachim.shop.View.widget.ProductCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/product_1"/>
+        <com.sdacademy.otto.joachim.shop.View.widget.ProductCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/product_2"/>
+        <com.sdacademy.otto.joachim.shop.View.widget.ProductCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/product_3"/>
+        <com.sdacademy.otto.joachim.shop.View.widget.ProductCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/product_4"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
